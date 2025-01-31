@@ -1,0 +1,51 @@
+CREATE TABLE `customer` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `Firstname` varchar(20) DEFAULT NULL,
+  `Lastname` varchar(20) DEFAULT NULL,
+  `Email` varchar(45) DEFAULT NULL,
+  `Phone` varchar(10) DEFAULT NULL,
+  `Username` varchar(45) DEFAULT NULL,
+  `Password` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `event` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `event_name` varchar(255) DEFAULT NULL,
+  `event_date` date DEFAULT NULL,
+  `event_time` time DEFAULT NULL,
+  `venue` varchar(255) DEFAULT NULL,
+  `ticket_price` decimal(10,2) DEFAULT NULL,
+  `event_type` varchar(50) DEFAULT NULL,
+  `cust_id` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `event_fk` (`cust_id`),
+  CONSTRAINT `event_fk` FOREIGN KEY (`cust_id`) REFERENCES `customer` (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `feedback` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `feedback_text` text NOT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `cust_id` int NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `feedback_fk` (`cust_id`),
+  CONSTRAINT `feedback_fk` FOREIGN KEY (`cust_id`) REFERENCES `customer` (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `payment` (
+  `paymentId` int NOT NULL AUTO_INCREMENT,
+  `cardNumber` varchar(45) DEFAULT NULL,
+  `cvv` varchar(10) DEFAULT NULL,
+  `expireDate` varchar(45) DEFAULT NULL,
+  `user_userId` int NOT NULL,
+  PRIMARY KEY (`paymentId`),
+  KEY `fk_payment_user1_idx` (`user_userId`),
+  CONSTRAINT `fk_payment_user1` FOREIGN KEY (`user_userId`) REFERENCES `customer` (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
