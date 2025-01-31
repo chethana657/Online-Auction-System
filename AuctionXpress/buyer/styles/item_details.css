@@ -1,0 +1,87 @@
+/* styles.css */
+
+/* Item details container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Item details heading */
+.item-details h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Item details paragraph */
+.item-details p {
+    margin-bottom: 10px;
+}
+
+/* Item image */
+.item-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Bid form */
+.item-details form {
+    display: flex;
+    align-items: center;
+}
+
+/* Bid input */
+.item-details input[type="number"] {
+    width: 100px;
+    margin-right: 10px;
+}
+
+/* Bid buttons */
+.item-details button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+/* Bid button hover effect */
+.item-details button:hover {
+    background-color: darkblue;
+}
+
+/* Go back button */
+.item-details button.goBack {
+    background: none;
+    border: none;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* styles.css */
+
+/* Left column styles */
+.details-column {
+    flex: 1; /* Occupy remaining space */
+    margin-right: 20px; /* Add spacing between columns */
+}
+
+/* Right column styles */
+.image-column {
+    flex: 1; /* Occupy remaining space */
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+}
+
+/* Item image styles */
+.item-image img {
+    max-width: 100%;
+    height: auto;
+}
+

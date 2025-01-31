@@ -1,0 +1,62 @@
+/* styles.css */
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.paybox {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inputBox {
+    margin-bottom: 20px;
+}
+
+.inputBox span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputBox input,
+.inputBox select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inputBox1 {
+    display: inline-block;
+    width: calc(50% - 20px);
+    margin-right: 20px;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}

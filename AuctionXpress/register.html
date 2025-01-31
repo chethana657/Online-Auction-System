@@ -1,0 +1,62 @@
+<!-- register.html -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+	<link rel="icon" href="images/logo.png">
+	<link rel = "stylesheet" href = "styles/styles.css">
+    <link rel="stylesheet" href="styles/register.css">
+</head>
+<body>
+	<header>
+		<a href="#"><img src = "images/logo.png" alt = "Logo" width = "150" height = "150" class = "logo"></a>
+		<a href="#" style="text-decoration:none;"><h1 class = "topic">Auction Xpress</h1></a>
+		<div class="login">
+			<span class = "profileName"><a href = "login.html"></a></span>
+		</div>
+	</header>
+	
+	<hr class="line1"> 
+	
+    <div class="container">
+        <h2>Register</h2>
+        <form action="register.php" method="post">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+			<div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+			<div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+			<div class="form-group">
+                <label for="contactNo">Contact No:</label>
+                <input type="tel" id="contactNo" name="contactNo" required>
+            </div>
+			<div class="form-group">
+                <label>User Type:</label>
+                <input type="radio" name="userType" value="Seller" required> Seller
+				<input type="radio" name="userType" value="Buyer"> Buyer<br><br>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+			<br>
+            <input type="submit" value="Register">
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a>.</p>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,53 @@
+/* styles.css */
+
+.container {
+    display: flex;
+    justify-content: space-between; /* To push the filter and items apart */
+}
+
+.filter {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.filter form {
+    margin-bottom: 20px;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.item button {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.item button:hover {
+    background-color: #45a049;
+}

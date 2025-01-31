@@ -1,0 +1,55 @@
+h2{
+	font-family:Arial;
+	font-size:40px;
+	padding-top:40px;
+}
+
+p{
+	font-family:Arial;
+	font-size:20px;
+}
+
+.Contact_form{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding:20px;
+	font-family:Arial;
+	border:1px solid black;
+	padding:20px 0 20px 10px;
+	margin:0 100px 10px 100px;
+}
+
+.Contact_form label{
+	font-size:20px;
+	font-family:Arial;
+}
+
+.Contact_form input[type=text]{
+	width:300px;
+	padding:10px 20px;
+	margin:8px;
+	box-sizing:border-box;
+	border:2px solid black;
+	border-radius:3px;
+	font-size:16px;
+}
+
+.Contact_form input[type=email]{
+	width:300px;
+	padding:10px 20px;
+	margin:8px;
+	box-sizing:border-box;
+	border:2px solid black;
+	border-radius:3px;
+	font-size:16px;
+}
+
+.Contact_form input[type=submit]{
+	height:50px;
+	width:120px;
+	border:none;
+	background-color:#F0DAAE;
+	font-size:18px;
+	font-family:Arial;
+}

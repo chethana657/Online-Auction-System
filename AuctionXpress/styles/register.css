@@ -1,0 +1,126 @@
+/* styles.css */
+/* .form-container { */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* max-width: 300px; /* Adjust as needed */ */
+/* } */
+
+/* .form-container label { */
+    /* margin-bottom: 5px; */
+/* } */
+
+/* .form-container input { */
+    /* margin-bottom: 10px; */
+/* } */
+
+/* styles.css */
+/* .container { */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+/* } */
+
+/* .form-group { */
+    /* text-align: left; */
+    /* margin-bottom: 10px; */
+/* } */
+
+/* style.css */
+/* body { */
+    /* font-family: Arial, sans-serif; */
+    /* background-color: #f4f4f4; */
+    /* margin: 0; */
+    /* padding: 0; */
+/* } */
+
+/* .container { */
+    /* width: 300px; */
+    /* margin: 100px auto; */
+    /* padding: 20px; */
+    /* background-color: #fff; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+/* } */
+
+/* .container h2 { */
+    /* text-align: center; */
+    /* margin-bottom: 20px; */
+/* } */
+
+/* .container input[type="text"], */
+/* .container input[type="password"], */
+/* .container input[type="submit"] { */
+    /* width: 100%; */
+    /* padding: 10px; */
+    /* margin-bottom: 10px; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    /* box-sizing: border-box; /* Ensure padding and border are included in width */ */
+/* } */
+
+/* .container input[type="submit"] { */
+    /* background-color: #4CAF50; */
+    /* color: white; */
+    /* border: none; */
+    /* cursor: pointer; */
+/* } */
+
+/* .container input[type="submit"]:hover { */
+    /* background-color: #45a049; */
+/* } */
+
+
+
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 50px;
+    background-color: #efe9e1; /* Filled color */
+    border-radius: 15px; /* Rounded borders */
+    /* border: 2px solid #000000; /* Border color */
+	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+	transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for the shadow */
+}
+
+.container:hover {
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+  transform: scale(1.005); /* Increase size on hover */
+}
+
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="submit"],
+.container input[type="email"],
+.container input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #45a049;
+}

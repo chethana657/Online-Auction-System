@@ -1,0 +1,57 @@
+/* CSS for the sidebar navigation */
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #efe9e1;
+    padding-top: 20px;
+    color: white;
+}
+
+.logo img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+#header {
+	color: #322D29;
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.navigation li {
+    padding: 10px;
+}
+
+.navigation li a {
+    color: #322D29;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: #555;
+}
+
+.logout {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.logout a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    margin-left: 200px; /* Adjust this value based on the width of the sidebar */
+    padding: 20px;
+}
